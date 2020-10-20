@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "account",
+    "description": "A product from Acme's catalog",
+    "type": "object",
+    "properties": {
+        "account_type": {
+            "type": "string",
+            "description": "Tipo de cuenta"
+        },
+        "account_id": {
+            "type": "string",
+            "description": "Numero de cuenta"
+        },
+        "account_parent": {
+            "type": "string",
+            "description": "Numero de cuenta asociada en LP"
+        },
+        "countable_balance": {
+            "description": "Balance contable",
+            "$ref": "#\/definitions\/Money"
+        },
+        "available_balance": {
+            "description": "Saldo disponible",
+            "$ref": "#\/definitions\/Money"
+        },
+        "used_amount": {
+            "description": "Saldo total usado en LP",
+            "$ref": "#\/definitions\/Money"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "price"
+    ]
+}
