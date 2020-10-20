@@ -18,15 +18,15 @@
         },
         "countable_balance": {
             "description": "Balance contable",
-            "$ref": "#\/definitions\/Money"
+            "$ref": "https://raw.githubusercontent.com/ybustamante/pocjsonschema/main/money.json"
         },
         "available_balance": {
             "description": "Saldo disponible",
-            "$ref": "#\/definitions\/Money"
+            "$ref": "https://raw.githubusercontent.com/ybustamante/pocjsonschema/main/money.json"
         },
         "used_amount": {
             "description": "Saldo total usado en LP",
-            "$ref": "#\/definitions\/Money"
+            "$ref": "https://raw.githubusercontent.com/ybustamante/pocjsonschema/main/money.json"
         }
     },
     "required": [
